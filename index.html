@@ -30,9 +30,37 @@
          <div class="col-md-8 col-12 text-center">
 		
             <h2 class="text-center">Bewerbung als Marketing-<span class="text-danger">Experte/Vertrieb (Teilzeit)</span></h2>
-  <p class="font-color-light">Email: kenfelixzacharias@gmail.com / Tel: 015164011132</p>
+			 <div class="insta-button">
+			 <br>
+                        <a rel="nofollow" class="rounded text-center" href="mailto:kenfelixzacharias@gmail.com" title="E-Mail senden">
+    Email: kenfelixzacharias@gmail.com &rarr;
+</a>
+                        </div>
+						 <div class="read-more-btn d-flex justify-content-center my-button">
+						  <style>
+		 .my-button.fixed {
+    position: fixed;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    top: 45px;
+    border-radius: 50%;
+}
+		 </style>
+		  <div class="insta-button">
+			 <br>
+                        <a style=" background-color: rgba(17, 24, 34, 0.8);
+    /* Optional: Hover-Effekt */
+    transition: background-color 0.3s ease;" rel="nofollow" class="rounded text-center" href="tel:+4915164011132" title="">
+    Telefon: 0151 6401 1132 &#x2794;
+</a>
+                        </div>
+  
+</div>
+						
          </div>
       </div>
+	  <br>
    </div>
 </header>
 <div class="divider-icon-container section-light">
@@ -93,6 +121,7 @@
                               Lebenslauf PDF &rarr;
                            </a>
                         </div>
+						
                      </div>
                   </div>
                </div>
@@ -206,6 +235,8 @@
             </svg>
          </div>
       </div>
+	  
+		
      <section id="tattoo-azubis" class="section-dark custom-padding-top position-relative">
          <picture>
             <source srcset="img/shape-25.webp" type="image/webp" class="img-fluid">
@@ -227,22 +258,73 @@
                        <br>
                      
                      </div>
-					 <div class="d-flex align-items-start">
-                        <div class="element" data-animate="left">
-                           <svg width="60" height="60" fill="#FFFACD" class="ms-2 me-4" style="flex-shrink: 0;">
-                              <use xlink:href="#uhr"></use>
-                           </svg>
-                        </div>
-                        <div>
-                           <h3 class="h5">Corenta AG</h3>
-                           <p class="font-color-light">Verantwortlich für Vertriebssteuerung und Mitarbeiterführung im Versicherungsbereich</p>
-                        </div>
-                     </div>
+<style>
+/* Basis-Stil für die Animation */
+[data-animate="left"] {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease-out;
+}
+
+[data-animate="left"].ready {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Kreis-Animation */
+.circle-animation {
+    stroke-dashoffset: 100.53;
+    transition: stroke-dashoffset 4s ease-out;
+}
+
+/* Animation startet wenn Element .ready Klasse hat */
+[data-animate="left"].ready .circle-animation {
+    stroke-dashoffset: 0;
+}
+</style>
+
+<div class="d-flex align-items-start">
+    <div class="element" data-animate="left">
+        <svg width="60" fill="#FFFACD" height="60" class="ms-2 me-4" style="flex-shrink: 0;" viewBox="0 0 36 36">
+            <!-- Grauer Hintergrundkreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#1c242f" 
+                    stroke-width="3"/>
+            
+            <!-- Gelber Fortschrittskreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#BFAFB2" 
+                    stroke-width="3"
+                    stroke-dasharray="100.53 100.53"
+                    class="circle-animation"
+                    transform="rotate(-90 18 18)"/>
+        </svg>
+    </div>
+    <div>
+        <h3 class="h5">Corenta AG</h3>
+        <p class="font-color-light">Verantwortlich für Vertriebssteuerung und Mitarbeiterführung im Versicherungsbereich</p>
+    </div>
+</div>
                      <div class="d-flex align-items-start">
                         <div class="element" data-animate="left">
-                           <svg width="60" height="60" fill="#FFFACD" class="ms-2 me-4" style="flex-shrink: 0;">
-                              <use xlink:href="#uhr"></use>
-                           </svg>
+                           <svg width="60" fill="#FFC0CB" height="60" class="ms-2 me-4" style="flex-shrink: 0;" viewBox="0 0 36 36">
+            <!-- Grauer Hintergrundkreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#1c242f" 
+                    stroke-width="3"/>
+            
+            <!-- Gelber Fortschrittskreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#ed687c" 
+                    stroke-width="3"
+                    stroke-dasharray="100.53 100.53"
+                    class="circle-animation"
+                    transform="rotate(-90 18 18)"/>
+        </svg>
                         </div>
                         <div>
                            <h3 class="h5">WBS Ausbildung</h3>
@@ -251,9 +333,22 @@
                      </div>
                      <div class="d-flex align-items-start">
                         <div class="element" data-animate="left">
-                           <svg width="60" height="60" fill="#FFFACD" class="ms-2 me-4" style="flex-shrink: 0;">
-                              <use xlink:href="#uhr"></use>
-                           </svg>
+                            <svg width="60" fill="#87CEEB" height="60" class="ms-2 me-4" style="flex-shrink: 0;" viewBox="0 0 36 36">
+            <!-- Grauer Hintergrundkreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#1c242f" 
+                    stroke-width="3"/>
+            
+            <!-- Gelber Fortschrittskreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#87CEEB" 
+                    stroke-width="3"
+                    stroke-dasharray="100.53 100.53"
+                    class="circle-animation"
+                    transform="rotate(-90 18 18)"/>
+        </svg>
                         </div>
                         <div>
                            <h3 class="h5">Display.de</h3>
@@ -262,9 +357,22 @@
                      </div>
 					 <div class="d-flex align-items-start">
                         <div class="element" data-animate="left">
-                           <svg width="60" height="60" fill="#FFFACD" class="ms-2 me-4" style="flex-shrink: 0;">
-                              <use xlink:href="#uhr"></use>
-                           </svg>
+                            <svg width="60" fill="#FFFACD" height="60" class="ms-2 me-4" style="flex-shrink: 0;" viewBox="0 0 36 36">
+            <!-- Grauer Hintergrundkreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#1c242f" 
+                    stroke-width="3"/>
+            
+            <!-- Gelber Fortschrittskreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#FFFACD" 
+                    stroke-width="3"
+                    stroke-dasharray="100.53 100.53"
+                    class="circle-animation"
+                    transform="rotate(-90 18 18)"/>
+        </svg>
                         </div>
                         <div>
                            <h3 class="h5">Performance Marketing & Paid Advertising</h3>
@@ -273,9 +381,22 @@
                      </div>
 					 <div class="d-flex align-items-start">
                         <div class="element" data-animate="left">
-                           <svg width="60" height="60" fill="#FFFACD" class="ms-2 me-4" style="flex-shrink: 0;">
-                              <use xlink:href="#uhr"></use>
-                           </svg>
+                           <svg width="60" fill="#ed687c" height="60" class="ms-2 me-4" style="flex-shrink: 0;" viewBox="0 0 36 36">
+            <!-- Grauer Hintergrundkreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#1c242f" 
+                    stroke-width="3"/>
+            
+            <!-- Gelber Fortschrittskreis -->
+            <circle cx="18" cy="18" r="16" 
+                    fill="none" 
+                    stroke="#ed687c" 
+                    stroke-width="3"
+                    stroke-dasharray="100.53 100.53"
+                    class="circle-animation"
+                    transform="rotate(-90 18 18)"/>
+        </svg>
                         </div>
                         <div>
                            <h3 class="h5">Content Creation & Video Marketing</h3>
@@ -287,14 +408,7 @@
                
             </div>
          </div>
-		 <div class="read-more-btn d-flex justify-content-center my-button">
-   <a href="tel:+4915164011132" class="btn btn-danger shadow fs-6 d-flex align-items-center">
-       Telefon: 0151 6401 1132 &#x2794;
-       <svg width="24" height="24" fill="currentColor" class="ms-2">
-           <use xlink:href="#phone"></use>
-       </svg>
-   </a>
-</div>
+		
       </section>
      
       <div class="divider-icon-container section-dark">
@@ -360,7 +474,7 @@
          <div class="half-circle-2">
             <div></div>
             <svg width="32" height="32" fill="#fff">
-               <use xlink:href="#hut"></use>
+               <use xlink:href="#hand"></use>
             </svg>
          </div>
       </div>
@@ -421,7 +535,7 @@
       </script>
       <script>
          const button = document.querySelector('.my-button'); // Stelle sicher, dass dies der Klasse deines Buttons entspricht.
-         const stickyPoint = 1500;
+         const stickyPoint = 500;
          
          window.addEventListener('scroll', function() {
            if (window.pageYOffset > stickyPoint) {
