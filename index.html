@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO-relevante Meta-Tags -->
-    <title>Ken Felix Zacharias - Digital Marketing & Sales Experte</title>
-    <meta name="description" content="Online-Lebenslauf von Ken Felix Zacharias: Experte für Digitales Marketing, Vertrieb, KI-Integration und Automation. Über 20 Jahre Erfahrung.">
-    <meta name="keywords" content="Ken Felix Zacharias, Bewerbung, Lebenslauf, Digital Marketing, Vertrieb, Sales, Außendienst, Kundenbetreuung, KI, AI, Automation, Fundraising, Mitarbeiterführung, Web Development, SEO, Google Ads, Meta Ads">
-    <meta name="author" content="Ken Felix Zacharias">
+    <title>Ken Zacharias - Marketing/Vertrieb (Teilzeit) | Experte für AI & Automation</title>
+    <meta name="description" content="Online-Lebenslauf von Ken Zacharias: Teilzeit-Experte für Marketing, Vertrieb, Web-Technologien, KI-Integration und Prozessautomatisierung.">
+    <meta name="keywords" content="Ken Zacharias, Lebenslauf, Teilzeit, Marketing, Vertrieb, Sales, Web, AI, KI, Automation, Fundraising, Kampagnenmanagement, Teamführung, Webentwicklung, SEO, Prozessoptimierung, Hamburg">
+    <meta name="author" content="Ken Zacharias">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -64,6 +64,8 @@
         /* Spezifische Überschriften-Stile */
         .h2-custom { font-size: 1.375rem; font-weight: 700; }
         .h2-custom-about-2 { color: #1ab69d; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;}
+        .focus-areas { font-size: 0.9rem; letter-spacing: 1px; color: #adb5bd; font-family: 'Spartan', sans-serif; margin-top: 5px; margin-bottom: 15px; font-weight: 500;}
+
 
         /* Textabsätze */
         p {
@@ -81,6 +83,8 @@
         .section-dark p, .font-color-light { color: #adb5bd; } /* Helleres Grau für Text auf dunklem Grund */
         .div-custom-color { background-color: #1c242f; padding: 40px; }
         .text-color-dark { color: #111822; font-size: 1rem; }
+        .text-danger { color: #ee4a62 !important; } /* Highlight color */
+
 
         /* Buttons und Links */
          .insta-button a {
@@ -136,7 +140,7 @@
             h1 { font-size: 2rem; }
             h2 { font-size: 1.6rem; }
         }
-        
+
         /* Komponenten-Styling */
         .navbar-brand { font-family: 'Spartan', sans-serif; font-weight: 700; font-size: 1.5rem; }
         .icon-circle { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(26, 182, 157, .3); }
@@ -146,7 +150,7 @@
 
         .section-kat { background-color: #111822; transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .section-kat:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-        .section-kat span { font-weight: 500; color: #fff; font-size: 1rem;}
+        .section-kat span { font-weight: 500; color: #fff; font-size: 0.95rem;} /* Slightly smaller font for skills */
         .section-kat svg { flex-shrink: 0; /* Prevent icon shrinking */ }
 
         /* Animationen */
@@ -169,6 +173,8 @@
         [data-animate="left"].ready .circle-animation { stroke-dashoffset: 0; }
         #berufserfahrung h5 { color: #1ab69d; margin-bottom: 5px;} /* Teal color for job titles */
         #berufserfahrung p {font-size: 0.95rem; line-height: 1.5;}
+        #berufserfahrung .job-date { font-size: 0.85rem; color: #adb5bd; display: block; margin-bottom: 5px; }
+
 
         /* Divider Icon */
         .divider-icon-container { position: relative; text-align: center; height: 62.5px; overflow: hidden; }
@@ -210,9 +216,100 @@
         .rounded { border-radius: 0.25rem !important; } /* Bootstrap default */
         .rounded-1 { border-radius: 0.375rem !important;}
         .rounded-circle { border-radius: 50% !important;}
-
-       
-
+        .profile-details { margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .profile-details p { font-size: 0.9rem; margin-bottom: 5px; color: #adb5bd;}
+        .profile-details strong { color: #fff; font-weight: 600;}
+        .profile-details a { color: #1ab69d; text-decoration: none; }
+        .profile-details a:hover { text-decoration: underline; }
+		  /* Image Comparison Slider */
+      .image-comparison-slider {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      }
+      .image-comparison-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+      user-select: none;
+      }
+      .before-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      z-index: 1;
+      }
+      .after-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      z-index: 2;
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+      }
+      .slider-handle {
+      position: absolute;
+      inset: 0;
+      width: 2px;
+      background: white;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      cursor: ew-resize;
+      }
+      .slider-handle::before {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      background: white;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      .slider-handle::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: #333;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
+      .comparison-label {
+      position: absolute;
+      bottom: 1rem;
+      padding: 0.5rem 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border-radius: 0.25rem;
+      z-index: 4;
+      }
+      .before-label {
+      left: 1rem;
+      }
+      .after-label {
+      right: 1rem;
+      }
+      @keyframes pulse {
+      0%, 100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7),
+      0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+      box-shadow: 0 0 0 15px rgba(255, 255, 255, 0),
+      0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+      }
 
     </style>
 </head>
@@ -229,7 +326,6 @@
              <path d="M8 23.74c-.4 1.3-2.43.63-1.99-.65.4-1.3 2.43-.63 1.99.65zM42.14 24.91c.45 1.28 2.45.56 1.97-.72-.45-1.28-2.46-.55-1.97.72z"/>
              <path d="m49.56 24.45-3.41-9.4c-.48-1.32-1.94-2-3.27-1.53-.86.43-5.38 1.64-5.88 2.5-2.25-1.01-5.16-4.28-6.94-4.29-2.13-.43-5-.63-8.62 1.55l-.02-.01s-.01.01-.02.03c-2.73 1.18-8.2.76-10.4.46-2.06-.49-6.5-3.14-7.51.22l-3.12 9.5A2.55 2.55 0 0 0 2 26.7c.98.16 5.23 2.06 6.19 1.67-1.66 1.55-1.48 5.08 1.19 5.1-.31 1.71 1.13 3.26 2.84 2.87-.23 1.63.92 3.04 2.53 2.98-.25 3.27 3.82 3.54 5.44 1.16 1.5 1.85 5.25 1.82 5.67-.83 1.34.37 3.24-.77 3.72-2.05 1.62.81 4.45-.66 4.47-2.63 1.65.52 3.89-.79 3.88-2.61.68-.09 2.55-1.18 4.42-2.76.52.12 5.1-1.75 5.68-1.9a2.534 2.534 0 0 0 1.53-3.25zM7.92 26.37c0 .34-5.15-1.58-5.3-1.57a.55.55 0 0 1-.35-.69l3.12-9.5a.55.55 0 0 1 .69-.35l4.44 1.46c.4.08.97.32.79.83l-3.12 9.5c-.04.14-.14.25-.27.32zm2.7 4.32c-.33.51-1.54 1.33-1.53.29 0-1.77 3.1-2.93 1.53-.29zm2.51 2.96c-.42.46-1.14.95-1.66.67-1.1-1.67 3.92-4.27 1.66-.67zm3.08 2.86c-.53.52-1.15 1.05-1.86.72-1.13-2.28 4.35-4.4 1.86-.72zm2.35 2.82c-1.67 1.72-2.45.2-1.24-1.09 1.37-1.55 2.61-.49 1.24 1.09zm16.95-6.4c-.79.35-1.52-.07-1.71-.2l-4.46-5.06-1.51 1.31 4.19 4.94c.09.35.23 1.19-.43 1.64-.87.59-1.74.02-1.98-.17l-3.82-4.99-1.59 1.21 3.68 4.86c-.08 1.02-1.66 1.58-2.42.97l-2.92-4.08-1.63 1.16 2.95 4.19c.11.32.16.81-.36 1.05-.88.4-1.99-.75-2.39-1.22.34-1.56-.71-3.05-2.29-3.06.32-1.85-1.27-3.39-3.1-2.96.15-1.56-1.1-2.87-2.68-2.68.27-1.86-1.45-3.27-3.22-2.6.45-1.13 3.67-10.04 3.48-11.24 1.75.12 4.05.17 6.13-.14-1.53 2.04-5.47 5.32-5.08 7.21 1.32 4.13 6.34.73 7.54-1.03.43-.46.63-.66 1.01-.94.85-.66 2.01-1.57 2.94-1.41 1.05.47 5.84 6.13 10.08 11.58.07.42.14 1.41-.41 1.66zm2.23-2.59c-4.41-5.68-9.84-12.31-11.46-12.6-1.96-.36-3.69 1.06-4.91 2.02-1.37 1.24-3.56 4.1-5.02 3.03.36-1.32 3.05-3.68 4.07-4.96 2.16-3.86 6.19-4.98 9.08-4.17 2.12.2 4.66 3.57 6.82 4.28.3.82 3.62 10.02 3.94 10.78-.99.75-1.99 1.39-2.52 1.62zm9.61-4.51c-.44-.03-5.28 2.39-5.47 1.52l-3.47-9.51a.54.54 0 0 1 .33-.68l4.83-1.75c.28-.1.6.04.7.33l3.41 9.4c.1.27-.05.59-.33.69z"/>
          </symbol>
-
         <!-- Add other SVG symbols here if needed -->
     </svg>
 
@@ -237,7 +333,7 @@
     <nav class="navbar sticky-top navbar-expand-lg bg-dark shadow" data-bs-theme="dark">
         <div class="container justify-content-center"> <!-- Zentriert den Inhalt im Container -->
             <a class="navbar-brand" href="#home" title="Zur Startseite">
-                Ken Felix Zacharias
+                Ken Zacharias
             </a>
         </div>
     </nav>
@@ -247,8 +343,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-md-10 col-12 text-center">
-                    <h1 class="mb-3">Digital Marketing & Sales <span class="text-danger">Experte</span></h1>
-                    <p class="lead font-color-light mb-4">Über 20 Jahre Erfahrung in Marketing, Vertrieb und Technologie – bereit für Ihre Herausforderung.</p>
+                    <h1 class="mb-2">Marketing/Vertrieb <span class="text-danger">(Teilzeit)</span></h1>
+                    <div class="focus-areas">MARKETING | VERTRIEB | WEB | AI & AUTOMATION</div>
+                    <p class="lead font-color-light mb-4">Über 20 Jahre Erfahrung in Marketing, Vertrieb und Technologie – spezialisiert auf digitale Strategien, KI und Automation.</p>
                     <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
                          <div class="insta-button">
                             <a rel="nofollow" class="rounded text-center contact-button" href="mailto:kenfelixzacharias@gmail.com" title="E-Mail senden">
@@ -267,19 +364,17 @@
         </div>
     </header>
 
- 
-
     <!-- Über Mich Section -->
     <section id="uebermich" class="section-dark custom-padding position-relative">
         <div class="container" style="position: relative;">
              <svg viewBox="0 0 100 100" class="observe pfeilone" height="180px" width="180px">
                <path class="arrow mirror" d="M10 50 Q 50 80 90 50 L 80 50 M 90 50 L 80 65" />
             </svg>
-          
+
             <div class="row align-items-center">
                 <div class="col-md-5 col-12 position-relative text-center text-md-start mb-4 mb-md-0">
                      <picture>
-                        <img src="img/ken.png" alt="Portrait Ken Felix Zacharias" title="Ken Felix Zacharias" class="img-fluid rounded-circle shadow-lg" loading="lazy" style="max-width: 300px; border: 5px solid #1ab69d;">
+                        <img src="img/ken.png" alt="Portrait Ken Zacharias" title="Ken Zacharias" class="img-fluid rounded-circle shadow-lg" loading="lazy" style="max-width: 300px; border: 5px solid #1ab69d;">
                     </picture>
                     <div class="bounce-container bg-light p-3 rounded w-75 position-absolute shadow" style="bottom: -15px; right: 15px;">
                         <div class="d-flex align-items-center">
@@ -299,18 +394,27 @@
                     <div class="div-custom-color rounded-1 shadow-sm">
                         <h2 class="h2-custom-about-2">MARKETING | VERTRIEB | WEB | AI & AUTOMATION</h2>
                         <h3 class="h2-custom mb-2 mt-3">Hallo, mein Name ist Ken Zacharias<span class="text-danger"> – schön, dass Sie hier sind!</span></h3>
-                        
+
                         <p class="font-color-light">
-                            Mit über 20 Jahren dynamischer Expertise im Marketing und Vertrieb entwickle ich wachstumsstarke Strategien für digitale Kanäle und den Außendienst. Meine Leidenschaft liegt darin, Performance Marketing, innovative Content-Erstellung und datengetriebene Kampagnenoptimierung zu vereinen – zunehmend unterstützt durch **KI und Automatisierung** zur Effizienzsteigerung.
+                            Mit über 20 Jahren dynamischer Expertise im Marketing und Vertrieb entwickle ich wachstumsstarke Strategien für digitale Kanäle und den Außendienst. Meine Leidenschaft liegt darin, Performance Marketing, innovative Content-Erstellung und datengetriebene Kampagnenoptimierung zu vereinen – zunehmend unterstützt durch <strong>KI und Automatisierung</strong> zur Effizienzsteigerung.
                         </p>
                          <p class="font-color-light">
-                            Ich bin erfahren in der **Kundenbetreuung** und **Mitarbeiterführung**, stets mit dem Ziel, Teams zu motivieren und gemeinsame Erfolge zu erzielen. Neben meiner beruflichen Begeisterung finde ich Ausgleich im Kampfsport, in der Musik und bei meiner Familie, Freunden und Hündin Else.
+                            Ich bin erfahren in der <strong>Kundenbetreuung</strong> und <strong>Mitarbeiterführung</strong>, stets mit dem Ziel, Teams zu motivieren und gemeinsame Erfolge zu erzielen. Neben meiner beruflichen Begeisterung finde ich Ausgleich im Kampfsport (Boxen), in der Musik (Gitarre), Kunst (Zeichnen) und bei meiner Familie, Freunden und Hündin Else.
                         </p>
+
+                        <div class="profile-details">
+                            <p><strong>Geburtstag:</strong> 31.12.1973</p>
+                            <p><strong>Sprachen:</strong> Deutsch (Muttersprache), Englisch (Grundkenntnisse)</p>
+                            <p><strong>Zertifikate:</strong> Google Ads Zertifizierung (<a href="#" title="Google Zertifikat ansehen - Link erforderlich">Zum Zertifikat</a>)</p>
+                            <!-- TODO: Add actual link for Google Certificate -->
+                        </div>
+
                         <div class="insta-button mt-4">
-                            <a rel="nofollow" class="rounded" href="img/Lebenslauf_Ken Felix Zacharias.pdf" title="Lebenslauf als PDF herunterladen">
+                            <a rel="nofollow" class="rounded" href="img/kenzachariaslebenslauf.pdf" title="Lebenslauf als PDF herunterladen">
                                 <img src="img/lebenslauf.png" alt="PDF Icon" title="PDF Icon" loading="lazy">
                                 Lebenslauf PDF →
                             </a>
+                             <!-- Ensure the PDF file 'Lebenslauf_Ken Felix Zacharias.pdf' exists in the 'img' folder -->
                         </div>
                     </div>
                 </div>
@@ -318,80 +422,75 @@
         </div>
     </section>
 
-
     <!-- Kompetenzen & Skills Section -->
     <section id="kompetenzen" class="section-light custom-padding">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="m-0">Kernkompetenzen & Skills</h2>
-               
+                <h2 class="m-0">Kompetenzen & Skills</h2>
                 <p>Ein Überblick über meine Fähigkeiten – bereit, Ihr Geschäft voranzubringen.</p>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
-                <!-- Skill Items -->
+                <!-- Skill Items from CV -->
                 <div class="col">
                     <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#FFC0CB"><use xlink:href="#checkmark1"></use></svg>
-                        <span>Performance Marketing (Google/Meta Ads)</span>
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>Strategieentwicklung & Kampagnenplanung</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center section-kat p-3 rounded h-100">
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>Vertriebssteuerung & Verkaufsschulung (B2B/B2C, Kaltakquise)</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center section-kat p-3 rounded h-100">
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>Teamführung & Mitarbeiterentwicklung</span>
                     </div>
                 </div>
                  <div class="col">
                     <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#87CEEB"><use xlink:href="#checkmark1"></use></svg>
-                        <span>Außendienst & Vertriebsstrategie</span>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#98FF98"><use xlink:href="#checkmark1"></use></svg>
-                        <span>AI-Integration & Prozessautomatisierung</span>
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>Webentwicklung & Webdesign (HTML, CSS, JS, Bootstrap, PHOTOSHOP)</span>
                     </div>
                 </div>
                  <div class="col">
                     <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#E6E6FA"><use xlink:href="#checkmark1"></use></svg>
-                        <span>Kundenbetreuung & CRM</span>
-                    </div>
-                </div>
-                 <div class="col">
-                    <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#FFFACD"><use xlink:href="#checkmark1"></use></svg>
-                        <span>Mitarbeiterführung & Teamentwicklung</span>
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>SEO & Online-Marketing</span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#BFAFB2"><use xlink:href="#checkmark1"></use></svg>
-                        <span>Digitales Marketing & Fundraising</span>
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>KI-Tools & Prozessautomatisierung (z.B. Make.com, Claude)</span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#ed687c"><use xlink:href="#checkmark1"></use></svg>
-                        <span>Content Creation & Video Marketing</span>
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>Projektmanagement & Budgetverantwortung</span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#89CFF0"><use xlink:href="#checkmark1"></use></svg>
-                        <span>Full-Stack Web Development</span>
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>Kundenbetreuung & Verhandlungssicherheit</span>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex align-items-center section-kat p-3 rounded h-100">
-                        <svg width="36" height="36" class="ms-2 me-3" fill="#FFE5B4"><use xlink:href="#checkmark1"></use></svg>
-                        <span>SEO & Strategieberatung</span>
+                        <svg width="36" height="36" class="ms-2 me-3" fill="#1ab69d"><use xlink:href="#checkmark1"></use></svg>
+                        <span>Telefonvertrieb & Call-Center-Management</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
     <!-- Expertise & Praxiserfahrung Section -->
     <section id="berufserfahrung" class="section-dark custom-padding position-relative">
-      
         <div class="container">
              <svg viewBox="0 0 100 100" class="observe pfeilone" height="180px" width="180px" style="top:-120px;">
                <path class="arrow mirror" d="M10 50 Q 50 80 90 50 L 80 50 M 90 50 L 80 65" />
@@ -399,7 +498,6 @@
             <div class="row justify-content-center">
                  <div class="col-lg-9 col-md-10 col-12 text-center mb-5">
                      <h2 class="m-0">Expertise & <span class="text-danger">Praxiserfahrung</span></h2>
-                 
                      <p class="font-color-light">Ausgewählte Stationen meines beruflichen Werdegangs.</p>
                  </div>
             </div>
@@ -407,7 +505,7 @@
                 <div class="col-lg-9 col-md-10 col-12">
                     <div class="div-custom-color rounded-1 shadow-sm p-4 p-md-5">
 
-                         <!-- NEUE POSITION -->
+                        <!-- Experience Entry 1 (Most Recent) -->
                         <div class="d-flex align-items-start mb-4 pb-4 border-bottom border-secondary border-opacity-25">
                             <div class="element flex-shrink-0 me-4" data-animate="left">
                                 <svg width="60" height="60" viewBox="0 0 36 36">
@@ -416,27 +514,45 @@
                                 </svg>
                             </div>
                             <div>
-                                <h5 class="text-light">Manager Digital Marketing & Fundraising (letzte 6 Monate)</h5>
+                                <h5 class="text-light">Manager Digital Marketing & Fundraising</h5>
+                                <span class="job-date">2024 - 2025 (Projektbasiert)</span>
                                 <p class="font-color-light small mb-1">Pacific Beach Dream (Immobilien) & Rainforest Save Stiftung</p>
-                                <p class="font-color-light">Verantwortlich für Strategieentwicklung, Kampagnenmanagement (Fundraising & Marketing), Mitarbeiterführung, Budgetverwaltung sowie die Implementierung von KI-Tools und Automatisierungslösungen zur Steigerung der Effizienz und Reichweite.</p>
+                                <p class="font-color-light">Verantwortlich für Strategieentwicklung, Kampagnenmanagement (Fundraising & Marketing), Teamleitung, Budgetsteuerung sowie Webdesign und Implementierung von KI-gestützter Automatisierung zur Effizienzsteigerung.</p>
                             </div>
                         </div>
-                        <!-- ENDE NEUE POSITION -->
 
+                        <!-- Experience Entry 2 -->
                         <div class="d-flex align-items-start mb-4 pb-4 border-bottom border-secondary border-opacity-25">
-                            <div class="element flex-shrink-0 me-4" data-animate="left">
+                             <div class="element flex-shrink-0 me-4" data-animate="left">
+                                <svg width="60" height="60" viewBox="0 0 36 36">
+                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#111822" stroke-width="3"/>
+                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#87CEEB" stroke-width="3" stroke-dasharray="100.53 100.53" class="circle-animation" transform="rotate(-90 18 18)"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="text-light">Leitung Marketing & Vertrieb</h5>
+                                <p class="font-color-light small mb-1">Display.de</p>
+                                <p class="font-color-light">Leitung des Marketingteams sowie Entwicklung und Umsetzung ganzheitlicher Marketing- und Vertriebskonzepte zur Verkaufsförderung. Verantwortlich für Webentwicklung, SEO-Optimierung und die digitale Sichtbarkeit des Unternehmens.</p>
+                            </div>
+                        </div>
+
+                        <!-- Experience Entry 3 -->
+                        <div class="d-flex align-items-start mb-4 pb-4 border-bottom border-secondary border-opacity-25">
+                           <div class="element flex-shrink-0 me-4" data-animate="left">
                                 <svg width="60" height="60" viewBox="0 0 36 36">
                                     <circle cx="18" cy="18" r="16" fill="none" stroke="#111822" stroke-width="3"/>
                                     <circle cx="18" cy="18" r="16" fill="none" stroke="#BFAFB2" stroke-width="3" stroke-dasharray="100.53 100.53" class="circle-animation" transform="rotate(-90 18 18)"/>
                                 </svg>
                             </div>
                             <div>
-                                <h5 class="text-light">Corenta AG</h5>
-                                <p class="font-color-light">Verantwortlich für Vertriebssteuerung im Außendienst und Mitarbeiterführung im Versicherungsbereich, inklusive Kundenbetreuung und -akquise.</p>
+                                <h5 class="text-light">Vertriebssteuerung & Teamleitung</h5>
+                                <p class="font-color-light small mb-1">Corenta AG (Versicherungsbereich)</p>
+                                <p class="font-color-light">Verantwortlich für die Vertriebssteuerung im Außendienst sowie Führung eines Teams. Aufgaben umfassten Kundenbetreuung, Kaltakquise und Prozessoptimierung im Vertrieb.</p>
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-start mb-4 pb-4 border-bottom border-secondary border-opacity-25">
+                        <!-- Experience Entry 4 -->
+                        <div class="d-flex align-items-start">
                             <div class="element flex-shrink-0 me-4" data-animate="left">
                                 <svg width="60" height="60" viewBox="0 0 36 36">
                                     <circle cx="18" cy="18" r="16" fill="none" stroke="#111822" stroke-width="3"/>
@@ -444,47 +560,9 @@
                                 </svg>
                             </div>
                             <div>
-                                <h5 class="text-light">WBS Ausbildung</h5>
-                                <p class="font-color-light">Weiterbildung zum Full-Stack Entwickler mit Fokus auf HTML5, CSS3, JavaScript sowie Vertiefung in digitales Marketing (SEO, CMS, Performance Ads) und Adobe Creative Suite.</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-start mb-4 pb-4 border-bottom border-secondary border-opacity-25">
-                            <div class="element flex-shrink-0 me-4" data-animate="left">
-                                <svg width="60" height="60" viewBox="0 0 36 36">
-                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#111822" stroke-width="3"/>
-                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#87CEEB" stroke-width="3" stroke-dasharray="100.53 100.53" class="circle-animation" transform="rotate(-90 18 18)"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h5 class="text-light">Display.de</h5>
-                                <p class="font-color-light">Entwicklung ganzheitlicher Marketing- und Vertriebskonzepte zur Verkaufsförderung, inklusive Betreuung von Schlüsselkunden.</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-start mb-4 pb-4 border-bottom border-secondary border-opacity-25">
-                            <div class="element flex-shrink-0 me-4" data-animate="left">
-                                <svg width="60" height="60" viewBox="0 0 36 36">
-                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#111822" stroke-width="3"/>
-                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#FFFACD" stroke-width="3" stroke-dasharray="100.53 100.53" class="circle-animation" transform="rotate(-90 18 18)"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h5 class="text-light">Performance Marketing & Paid Advertising</h5>
-                                <p class="font-color-light">Langjährige Erfahrung in der strategischen Planung, Umsetzung und Optimierung von Werbekampagnen auf allen relevanten Plattformen (Google Ads, Meta Business, TikTok) mit Fokus auf ROI.</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-start">
-                            <div class="element flex-shrink-0 me-4" data-animate="left">
-                                <svg width="60" height="60" viewBox="0 0 36 36">
-                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#111822" stroke-width="3"/>
-                                    <circle cx="18" cy="18" r="16" fill="none" stroke="#98FF98" stroke-width="3" stroke-dasharray="100.53 100.53" class="circle-animation" transform="rotate(-90 18 18)"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h5 class="text-light">KI & Automation im Marketing</h5>
-                                <p class="font-color-light">Aktive Anwendung von KI-Tools (z.B. für Content-Erstellung, Datenanalyse) und Automatisierungs-Plattformen zur Optimierung von Marketing- und Vertriebsprozessen.</p>
+                                <h5 class="text-light">Aufbau & Leitung Call-Center</h5>
+                                <p class="font-color-light small mb-1">HanseNet / Arcor (heute O2) – Telekommunikation</p>
+                                <p class="font-color-light">Aufbau und Leitung eines Call-Centers. Entwicklung von Gesprächsleitfäden, Schulung und Führung von Vertriebsmitarbeitern für Kaltakquise im Telefonverkauf sowie Außendienst. Enge Zusammenarbeit mit HanseNet und Arcor.</p>
                             </div>
                         </div>
 
@@ -493,8 +571,89 @@
             </div>
         </div>
     </section>
-
- 
+<!-- Optimierte vs. Standard Prozesse Section -->
+<!-- Team & Strategie: Vergleichs-Sektion -->
+<section class="section-light py-4 py-md-5 position-relative">
+    <div class="container">
+      <!-- Dekorativer Pfeil (optional, kann entfernt werden, wenn er stört) -->
+      <svg viewBox="0 0 100 100" class="observe pfeilone" height="180" width="180" aria-hidden="true">
+        <path class="arrow mirror" d="M10 50 Q 50 80 90 50 L 80 50 M 90 50 L 80 65" />
+      </svg>
+      <div class="row align-items-center">
+        <!-- Linke Spalte - Text -->
+        <div class="col-md-6 col-12 position-relative mb-4 mb-md-0">
+          <div class="light-kreis p-3 rounded">
+            <h2 class="h2-custom m-0">
+              Team & Strategie: <span class="text-danger">Der Unterschied zwischen Gackern und Gold-Ei</span>
+            </h2>
+            <!-- Optional: Trennlinie wieder hinzufügen, falls gewünscht -->
+            <!--
+            <div class="divider mb-2">
+              <picture>
+                <source srcset="img/line.webp" type="image/webp">
+                <img src="img/line.png" alt="Dekorative Trennlinie" width="150" height="20" loading="lazy" class="img-fluid">
+              </picture>
+            </div>
+            -->
+            <ul class="list-unstyled mb-0 py-3">
+              <li class="d-flex align-items-center mb-2">
+                <svg width="30" height="30" fill="#1ab69d" class="me-2 flex-shrink-0" aria-hidden="true">
+                  <use xlink:href="#checkmark1"></use>
+                </svg>
+                <span>Ein starkes Team aufbauen & motivieren</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg width="30" height="30" fill="#1ab69d" class="me-2 flex-shrink-0" aria-hidden="true">
+                  <use xlink:href="#checkmark1"></use>
+                </svg>
+                <span>Klare Ziele & die richtigen Werkzeuge bereitstellen</span>
+              </li>
+            </ul>
+            <p class="mb-0">
+              Ein Top-Team braucht mehr als nur Körnerfutter. Mit der richtigen Führung, klaren Zielen und effizienten Prozessen (ja, auch KI & Automation helfen!) verwandelt sich jedes "gerupfte Huhn"-Projekt in ein echtes Prachtexemplar, das Ergebnisse liefert – und nicht nur Federn lässt.
+            </p>
+          </div>
+        </div>
+        <!-- Rechte Spalte - Vergleichsslider -->
+        <div class="col-md-6 col-12 position-relative">
+          <div class="image-comparison-slider">
+            <!-- Vorher-Bild (Gerupftes Huhn) -->
+            <div class="before-image">
+              <picture>
+                <!-- Annahme: huhn.png ist das gerupfte Huhn -->
+                <img src="img/huhn.png"
+                  alt="Symbolbild: Projekt oder Team ohne gute Mitarbeiter und Strategie - gerupftes Huhn"
+                  width="600"
+                  height="400"
+                  loading="lazy">
+              </picture>
+              <span class="comparison-label before-label">Ohne gute Mitarbeiter</span>
+            </div>
+            <!-- Nachher-Bild (Prachtexemplar) -->
+            <div class="after-image">
+              <picture>
+                 <!-- Annahme: huhn1.png ist das schöne Huhn -->
+                <img src="img/huhn1.png"
+                  alt="Symbolbild: Erfolgreiches Projekt oder Team mit guten Mitarbeitern und Strategie - Prachthuhn"
+                  width="600"
+                  height="400"
+                  loading="lazy">
+              </picture>
+              <span class="comparison-label after-label">Mit guten Mitarbeitern</span>
+            </div>
+            <!-- Slider Handle -->
+            <div class="slider-handle"
+              role="slider"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Vergleichsregler: Team ohne vs. mit guten Mitarbeitern"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
     <!-- Call to Action Section -->
      <section class="section-light custom-padding">
         <div class="container">
@@ -502,10 +661,10 @@
                 <div class="col-lg-10 text-center">
                      <h2 class="h2-custom-about-2" style="color:#1ab69d;">Ihr nächster Schritt</h2>
                      <h3 class="h2-custom m-0 mb-2">Lassen Sie uns <span class="text-danger">gemeinsam durchstarten!</span></h3>
-                 
+
                     <p class="mt-3">
                         Bereit, Ihre Marketing- und Vertriebsziele mit innovativen Strategien, KI-gestützter Effizienz und bewährter Führungskompetenz zu übertreffen?
-                        Ich bringe die Erfahrung und die Leidenschaft mit, um Ihr Team tatkräftig zu unterstützen und messbare Ergebnisse zu liefern.
+                        Ich bringe die Erfahrung und die Leidenschaft mit, um Ihr Team – auch in Teilzeit – tatkräftig zu unterstützen und messbare Ergebnisse zu liefern.
                     </p>
                      <p class="fw-bold">Ich freue mich auf ein persönliches Gespräch, um zu erfahren, wie ich zu Ihrem Erfolg beitragen kann.</p>
                      <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
@@ -530,7 +689,7 @@
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-10">
-                    <p class="font-color-light small mb-0">Copyright © 2024 Ken Felix Zacharias</p>
+                    <p class="font-color-light small mb-0">Copyright © 2025 Ken Zacharias</p>
                 </div>
             </div>
         </div>
@@ -558,6 +717,69 @@
     <!-- Internal JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+		
+		class ImageComparisonSlider {
+        constructor(element) {
+          this.element = element;
+          this.slider = element.querySelector('.slider-handle');
+          this.afterImage = element.querySelector('.after-image');
+          this.isDragging = false;
+          this.init();
+        }
+      
+        init() {
+          // Touch-Events
+          this.slider.addEventListener('touchstart', e => this.startDragging(e));
+          this.element.addEventListener('touchmove', e => this.drag(e));
+          this.element.addEventListener('touchend', () => this.stopDragging());
+          
+          // Mouse-Events
+          this.slider.addEventListener('mousedown', e => this.startDragging(e));
+          this.element.addEventListener('mousemove', e => this.drag(e));
+          document.addEventListener('mouseup', () => this.stopDragging());
+          
+          // Verhindern von Drag-Verhalten der Bilder
+          this.element.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', e => e.preventDefault());
+          });
+        }
+      
+        startDragging(e) {
+          this.isDragging = true;
+          this.slider.style.transition = 'none';
+          this.afterImage.style.transition = 'none';
+        }
+      
+        stopDragging() {
+          this.isDragging = false;
+        }
+      
+        drag(e) {
+          if (!this.isDragging) return;
+          e.preventDefault();
+          
+          const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+          const rect = this.element.getBoundingClientRect();
+          const x = Math.min(Math.max(0, ((clientX - rect.left) / rect.width) * 100), 100);
+          
+          this.updateSliderPosition(x);
+        }
+      
+        updateSliderPosition(percentage) {
+          this.slider.style.left = `${percentage}%`;
+          this.afterImage.style.clipPath = `polygon(${percentage}% 0, 100% 0, 100% 100%, ${percentage}% 100%)`;
+          this.slider.setAttribute('aria-valuenow', Math.round(percentage));
+        }
+      }
+      
+      /**
+       * Initialisiert alle Image Comparison Slider auf der Seite
+       */
+      function initImageComparisonSliders() {
+        document.querySelectorAll('.image-comparison-slider').forEach(slider => {
+          new ImageComparisonSlider(slider);
+        });
+      }
 
             // SlideOut Animation Trigger
             setTimeout(function() {
@@ -604,12 +826,14 @@
                         } else {
                             // Optional: Reset animation when element scrolls out of view
                             if (entry.target.matches('[data-animate]')) {
-                                entry.target.classList.remove('ready');
+                                // Keep the 'ready' class to prevent re-animation on scroll up
+                                // entry.target.classList.remove('ready');
                             }
-                            if (entry.target.classList.contains('observe')) {
+                             if (entry.target.classList.contains('observe')) {
                                 const arrow = entry.target.querySelector('.arrow');
                                 if (arrow) {
-                                     arrow.classList.remove('start-animation');
+                                     // Keep the animation running or remove class if reset desired
+                                     // arrow.classList.remove('start-animation');
                                 }
                             }
                         }
@@ -633,6 +857,378 @@
              }
 
         });
+    </script>
+	<script>
+      /**
+       * Optimierte JavaScript-Funktionalität für die Tattoo-Coach Webseite
+       * @version 1.0.0
+       */
+      document.addEventListener('DOMContentLoaded', function() {
+        // Alle Module initialisieren
+        VideoHandler.init();
+        TimerManager.init();
+        initImageComparisonSliders();
+        CounterAnimation.init();
+        WhatsAppIntegration.init();
+        StickyButton.init();
+        ArrowAnimation.init();
+        initAnimations();
+      });
+      
+      /**
+       * Video-Handler für das Hauptvideo
+       */
+      const VideoHandler = {
+        init() {
+          const videoPlaceholder = document.getElementById('video-placeholder');
+          if (!videoPlaceholder) return;
+          
+          videoPlaceholder.style.cursor = 'pointer';
+          videoPlaceholder.addEventListener('click', this.loadVideo.bind(this), { once: true });
+        },
+      
+        async loadVideo() {
+          const videoContainer = document.getElementById('video-container');
+          if (!videoContainer) return;
+          
+          videoContainer.classList.remove('d-none');
+          this.remove();
+          
+          videoContainer.innerHTML = `<iframe 
+              src="https://player.vimeo.com/video/1006338530?autoplay=1&muted=0&autopause=0&background=0&controls=1&playsinline=1" 
+              class="w-100 h-100"
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen
+              id="vimeo-player"
+              playsinline>
+          </iframe>`;
+      
+          await loadVimeoAPI();
+          
+          const player = new Vimeo.Player('vimeo-player');
+          
+          player.on('ended', () => {
+            const buttonContainer = document.getElementById('button-container');
+            if (buttonContainer) {
+              buttonContainer.classList.remove('d-none');
+            }
+          });
+          
+          setTimeout(() => {
+            player.play().catch(console.error);
+          }, 100);
+        }
+      };
+      
+      /**
+       * Hilfsfunktion zum Laden der Vimeo API
+       */
+      function loadVimeoAPI() {
+        return new Promise((resolve) => {
+          const script = document.createElement('script');
+          script.src = 'https://player.vimeo.com/api/player.js';
+          script.onload = resolve;
+          document.head.appendChild(script);
+        });
+      }
+      
+      /**
+       * Timer-Manager für die Countdown-Timer
+       */
+      const TimerManager = {
+        init() {
+          this.initializeTimers();
+          this.startTimers();
+        },
+        
+        initializeTimers() {
+          // Nur einen Countdown für beide Timer verwenden
+          let countdownDate = new Date();
+          const savedTime = localStorage.getItem("remainingTime");
+          
+          if (savedTime) {
+            countdownDate.setTime(countdownDate.getTime() + parseInt(savedTime));
+          } else {
+            this.setInitialTime(countdownDate);
+          }
+        
+          this.countdownDate = countdownDate;
+        },
+        
+        setInitialTime(date) {
+          // Standardzeit für den Timer setzen
+          date.setHours(date.getHours() + 21);
+          date.setMinutes(date.getMinutes() + 45);
+          date.setSeconds(date.getSeconds() + 60);
+        },
+        
+        startTimers() {
+          setInterval(() => {
+            this.updateTimers(this.countdownDate);
+          }, 1000);
+        },
+        
+        updateTimers(countdownDate) {
+          let remainingTime = countdownDate - new Date();
+          
+          // Timer zurücksetzen, wenn er abgelaufen ist
+          if (remainingTime < 0) {
+            countdownDate.setHours(countdownDate.getHours() + 7);
+            remainingTime = countdownDate - new Date();
+          }
+        
+          // Berechnung der Zeit
+          const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+        
+          // Update beider Timer mit den gleichen Werten
+          this.updateTimerDisplay('days', days);
+          this.updateTimerDisplay('hours', hours);
+          this.updateTimerDisplay('minutes', minutes);
+          this.updateTimerDisplay('seconds', seconds);
+          
+          this.updateTimerDisplay('days1', days);
+          this.updateTimerDisplay('hours1', hours);
+          this.updateTimerDisplay('minutes1', minutes);
+          this.updateTimerDisplay('seconds1', seconds);
+        
+          localStorage.setItem("remainingTime", remainingTime);
+        },
+        
+        updateTimerDisplay(id, value) {
+          const element = document.getElementById(id);
+          if (element) {
+            element.innerHTML = ("0" + value).slice(-2);
+          }
+        }
+      };
+      
+      /**
+       * Image Comparison Slider
+       */
+      class ImageComparisonSlider {
+        constructor(element) {
+          this.element = element;
+          this.slider = element.querySelector('.slider-handle');
+          this.afterImage = element.querySelector('.after-image');
+          this.isDragging = false;
+          this.init();
+        }
+      
+        init() {
+          // Touch-Events
+          this.slider.addEventListener('touchstart', e => this.startDragging(e));
+          this.element.addEventListener('touchmove', e => this.drag(e));
+          this.element.addEventListener('touchend', () => this.stopDragging());
+          
+          // Mouse-Events
+          this.slider.addEventListener('mousedown', e => this.startDragging(e));
+          this.element.addEventListener('mousemove', e => this.drag(e));
+          document.addEventListener('mouseup', () => this.stopDragging());
+          
+          // Verhindern von Drag-Verhalten der Bilder
+          this.element.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', e => e.preventDefault());
+          });
+        }
+      
+        startDragging(e) {
+          this.isDragging = true;
+          this.slider.style.transition = 'none';
+          this.afterImage.style.transition = 'none';
+        }
+      
+        stopDragging() {
+          this.isDragging = false;
+        }
+      
+        drag(e) {
+          if (!this.isDragging) return;
+          e.preventDefault();
+          
+          const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+          const rect = this.element.getBoundingClientRect();
+          const x = Math.min(Math.max(0, ((clientX - rect.left) / rect.width) * 100), 100);
+          
+          this.updateSliderPosition(x);
+        }
+      
+        updateSliderPosition(percentage) {
+          this.slider.style.left = `${percentage}%`;
+          this.afterImage.style.clipPath = `polygon(${percentage}% 0, 100% 0, 100% 100%, ${percentage}% 100%)`;
+          this.slider.setAttribute('aria-valuenow', Math.round(percentage));
+        }
+      }
+      
+      /**
+       * Initialisiert alle Image Comparison Slider auf der Seite
+       */
+      function initImageComparisonSliders() {
+        document.querySelectorAll('.image-comparison-slider').forEach(slider => {
+          new ImageComparisonSlider(slider);
+        });
+      }
+      
+      /**
+       * Counter Animation
+       */
+      const CounterAnimation = {
+        init() {
+          const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                this.startCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.2 });
+      
+          document.querySelectorAll('.counter-value').forEach(counter => {
+            counterObserver.observe(counter);
+          });
+        },
+      
+        startCounter(counter) {
+          const target = +counter.getAttribute('data-target').replace('+', '');
+          const step = target / 100; // Schnellere Animation
+      
+          const updateCounter = () => {
+            const current = +counter.innerText;
+            if (current < target) {
+              counter.innerText = `${Math.ceil(current + step)}`;
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.innerText = target;
+            }
+          };
+      
+          updateCounter();
+        }
+      };
+      
+      /**
+       * WhatsApp Integration
+       */
+      const WhatsAppIntegration = {
+        init() {
+          // Nach 5 Sekunden das Slide-Out-Element anzeigen
+          setTimeout(() => {
+            const slideOut = document.getElementById('slideOut');
+            if (slideOut) {
+              slideOut.classList.add('visible');
+            }
+          }, 5000);
+          
+          // WhatsApp Chat-Button Funktionalität
+          const chatButton = document.getElementById('chatButton');
+          if (chatButton) {
+            chatButton.addEventListener('click', (e) => {
+              // Der Link ist bereits im HTML-Attribut definiert
+            });
+          }
+        }
+      };
+      
+      /**
+       * Sticky Button Funktionalität
+       */
+      const StickyButton = {
+        init() {
+          const stickyButton = document.getElementById('stickyButton');
+          const scrollTrigger = 1500; // Button erscheint nach 1500px Scroll
+          
+          if (stickyButton) {
+            window.addEventListener('scroll', this.debounce(() => {
+              if (window.scrollY > scrollTrigger) {
+                stickyButton.classList.add('visible');
+              } else {
+                stickyButton.classList.remove('visible');
+              }
+            }, 50));
+          }
+        },
+        
+        // Debounce-Funktion für bessere Performance
+        debounce(func, wait) {
+          let timeout;
+          return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+          };
+        }
+      };
+      
+      /**
+       * Pfeil-Animation
+       */
+      const ArrowAnimation = {
+        init() {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              const arrow = entry.target.querySelector('.arrow');
+              if (arrow) {
+                if (entry.isIntersecting) {
+                  arrow.classList.add('start-animation');
+                } else {
+                  arrow.classList.remove('start-animation');
+                }
+              }
+            });
+          });
+      
+          document.querySelectorAll('.observe').forEach((section) => {
+            observer.observe(section);
+          });
+        }
+      };
+      
+      /**
+       * Initialisiert alle Animationen für Elemente mit dem data-animate-Attribut
+       * Fügt die Klasse "ready" hinzu, wenn das Element sichtbar ist
+       */
+      function initAnimations() {
+        const animationObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('ready');
+            }
+          });
+        }, { threshold: 0.1 });
+      
+        document.querySelectorAll('[data-animate]').forEach(el => {
+          el.classList.add(`animate-from-${el.dataset.animate}`);
+          animationObserver.observe(el);
+        });
+      }
+      
+      /**
+       * Funktion zum Umschalten der Testimonial-Texte
+       * Erweitert oder faltet Textbereiche zusammen
+       */
+      function toggleText(textId) {
+        const textElement = document.getElementById(textId);
+        const btnElement = document.getElementById('btn' + textId.slice(-1));
+        
+        if (!textElement || !btnElement) return;
+        
+        if (textElement.classList.contains('expanded')) {
+          // Text einklappen
+          textElement.classList.remove('expanded');
+          btnElement.querySelector('button').innerText = 'Mehr anzeigen';
+        } else {
+          // Text ausklappen mit Fade-Effekt
+          textElement.style.opacity = '0.5';
+          setTimeout(() => {
+            textElement.classList.add('expanded');
+            textElement.style.opacity = '1';
+          }, 300);
+          btnElement.querySelector('button').innerText = 'Weniger anzeigen';
+        }
+      }
+      	
     </script>
 
 </body>
